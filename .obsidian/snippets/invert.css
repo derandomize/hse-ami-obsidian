@@ -1,0 +1,7 @@
+.theme-dark img[alt$="invert_dark"] {
+  filter: invert(1);
+}
+
+.theme-light img[alt$="#invert_light"] {
+  filter: invert(1);
+}
