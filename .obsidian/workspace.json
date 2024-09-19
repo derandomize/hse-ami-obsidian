@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "5ba44d6c5531e97d",
+        "id": "0138cbabbc2a9bad",
         "type": "tabs",
         "children": [
           {
-            "id": "648c3288ddb7d505",
+            "id": "2fd5c3e8fe6b5e4c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
+                "file": "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
+                "file": "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
+                "file": "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md"
+                "file": "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md"
               }
             }
           },
@@ -164,7 +164,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
+                "file": "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -210,9 +210,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "648c3288ddb7d505",
+  "active": "2fd5c3e8fe6b5e4c",
   "lastOpenFiles": [
     "200-Study/220-Math/222-Calculus/222-Calculus.md",
+    "200-Study/220-Math/222-Calculus/Теорема о свойствах полукольца.md",
+    "200-Study/220-Math/222-Calculus/Теорема о том что семейства ячеек полукольца.md",
+    "200-Study/220-Math/222-Calculus/Семейство ячеек в действительном многомерном пространстве.md",
+    "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
     "200-Study/220-Math/222-Calculus/Связь структур на системах множетсв.md",
     "conflict-files-obsidian-git.md",
     "200-Study/220-Math/222-Calculus/Теорема о связи ячейки с остальными параллепипедами.md",
@@ -222,7 +226,6 @@
     "200-Study/220-Math/222-Calculus/Симметричная система множеств.md",
     "200-Study/220-Math/222-Calculus/Разбиение множеств.md",
     "200-Study/220-Math/222-Calculus/Равносильность замкнутостей в симметричной системе множеств.md",
-    "200-Study/220-Math/222-Calculus/Полукольцо в системе множеств.md",
     "200-Study/220-Math/222-Calculus/Дизъюнктивные множества.md",
     "200-Study/220-Math/222-Calculus/Дизъюнктивное объединение.md",
     "200-Study/220-Math/222-Calculus/Боролевская сигма алгебра.md",
@@ -240,10 +243,7 @@
     "200-Study/220-Math/222-Calculus/Untitled",
     "200-Study/220-Math/222-Calculus/Декартово произведение систем множеств.md",
     "200-Study/220-Math/222-Calculus/Связь дизъюнктного и стандартного объединения.md",
-    "200-Study/220-Math/222-Calculus/Теорема о свойствах полукольца.md",
     "200-Study/220-Math/221-Algebra/Теорема о оценке алгебраической кратности.md",
-    "200-Study/220-Math/222-Calculus/Теорема о выражении открытого множества через ячейки.md",
-    "200-Study/220-Math/222-Calculus/Семейство ячеек в действительном многомерном пространстве.md",
     "preamble.sty",
     "Текстовый документ.txt",
     "Untitled",
