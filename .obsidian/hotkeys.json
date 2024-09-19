@@ -1,9 +1,17 @@
 {
-  "link-with-alias:create-link": [
+  "link-with-alias:create-link-with-alias": [
     {
       "modifiers": [
         "Mod",
         "Shift"
+      ],
+      "key": "L"
+    }
+  ],
+  "link-with-alias:create-link": [
+    {
+      "modifiers": [
+        "Mod"
       ],
       "key": "L"
     }
