@@ -1,6 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Minimal",
-  "baseFontSize": 21,
-  "enabledCssSnippets": []
+  "cssTheme": "Ultra Lobster",
+  "baseFontSize": 20,
+  "enabledCssSnippets": [],
+  "nativeMenus": false
 }
