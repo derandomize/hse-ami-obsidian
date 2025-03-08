@@ -9,4 +9,5 @@ jobs:
       - name: "publish obsidian"
         uses: asstart/obsidian-publish@main
         with:
+          sourceFolder: vault
           publishAll: true
