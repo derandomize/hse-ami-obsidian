@@ -1,0 +1,5264 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../%D0%9C%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD/">
+      
+      
+        <link rel="next" href="../%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0/">
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
+    
+    
+      
+        <title>Полиномиальные коды - obsidian-mkdocs template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="obsidian-mkdocs template" class="md-header__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            obsidian-mkdocs template
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Полиномиальные коды
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="obsidian-mkdocs template" class="md-nav__button md-logo" aria-label="obsidian-mkdocs template" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    obsidian-mkdocs template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    200 Study
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            200 Study
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../200-Study/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    200 Study
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    210 Computer Science
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            210 Computer Science
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../210-Computer-Science/210-Computer-Science/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    210 Computer Science
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_2" id="__nav_1_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    211 Algorithms
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            211 Algorithms
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../210-Computer-Science/211-Algorithms/211-Algorithms/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    211 Algorithms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../210-Computer-Science/211-Algorithms/211a-Themes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    220 Math
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            220 Math
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../220-Math/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    220 Math
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_2" id="__nav_1_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    221 Algebra
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            221 Algebra
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/221-Algebra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    221 Algebra
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Алгебраическая кратность
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%93%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BA%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Геометрическая кратность
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%94%D0%B8%D0%B0%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Диагонализуемая матрица
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%94%D0%B8%D0%B0%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%D1%8B%D0%B9%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Диагонализуемый оператор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%94%D0%BE%D1%81%D1%82%D0%B0%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%20%D0%B4%D0%B8%D0%B0%D0%B3%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Достаточное условие диагонализуемости оператора
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%98%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Инвариантное подпространство
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%98%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B2%20%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D1%82%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D1%85%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%B0%D1%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Инвариантность в коммутирующих операторах
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9A%D0%B0%D0%BA%20%D0%B8%D1%81%D0%BA%D0%B0%D1%82%D1%8C%20%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Как искать собственные значения
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9B%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Линейный оператор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Матричное представление инвариантного подпространства
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%B2%D1%81%D0%B5%D1%85%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D1%85%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Множество всех линейных операторов
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8%20%D1%81%20%D0%B8%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Операции с инвариантными подпространствами
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9F%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%20%D0%B2%20%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B0%D1%85%20%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD%D0%BE%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Подобие матриц в терминах характеристических многочленов
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%9F%D0%BE%D0%B4%D0%BE%D0%B1%D0%B8%D0%B5%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Подобие матриц
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D1%8F%D0%B4%D1%80%D0%B0%20%D0%B8%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%B0%20%D1%81%20%D0%B8%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Связь ядра и образа с инвариантными подпространствами
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A1%D0%BB%D0%B5%D0%B4%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    След матрицы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A1%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Собственное подпространство
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A1%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B0%20%D0%B8%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Собственные вектора и значения
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BE%D0%B4%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема о независимости собственных подпространств
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B5%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B9%20%D0%BA%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема о оценке алгебраической кратности
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../221-Algebra/%D0%A5%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Характеристический многочлен
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_3" id="__nav_1_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    222 Calculus
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            222 Calculus
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HSE AMI OBSIDIAN
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/222-Calculus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Содержание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B3%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%BE%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%BD%D0%B0%20%D0%BA%D1%80%D1%83%D0%B3%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Аналитичность голоморфной функции на круге
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%90%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%20%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D1%8B%20%D0%90%D0%B1%D0%B5%D0%BB%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Аналог теоремы Абеля
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%90%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8%20%D1%81%20%D0%B1%D0%B5%D1%81%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D1%81%D1%82%D1%8C%D1%8E/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Арифметические операции с бесконечностью
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%91%D0%B8%D0%BB%D0%B5%D1%82%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%91%D0%BE%D1%80%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%91%D0%BE%D1%80%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F%20%D0%BC%D0%B5%D1%80%D0%B0%20%D1%8D%D1%82%D0%BE%20%D1%81%D1%83%D0%B1%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D1%8F%D1%8F%20%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%93%D0%B0%D0%BC%D0%BC%D0%B0%20%D0%B8%20%D0%91%D0%B5%D1%82%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%AD%D0%B9%D0%BB%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Гамма функция
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%93%D0%B0%D1%80%D0%BC%D0%BE%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Гармоническая функция
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%93%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D0%B8%20%D0%9F%D0%BE%D0%B4%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%93%D1%80%D0%B0%D1%84%D0%B8%D0%BA%20%D0%B8%20%D0%9F%D0%BE%D0%B4%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%B5%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D1%81%D0%BF%D0%B0%D0%BA%D1%82%D0%BE%D0%B2%20%D1%8D%D1%82%D0%BE%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BA%D1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Декартово произведение коспактов это компакт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%B5%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%B8%D0%B7%D1%8A%D1%8E%D0%BD%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%B8%D0%B7%D1%8A%D1%8E%D0%BD%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Дизъюнктивные множества
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%B8%D1%84%D1%84%D0%B5%D0%BC%D0%BE%D1%80%D1%84%D0%B8%D0%B7%D0%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%94%D0%BE%D0%BF%D1%83%D1%81%D1%82%D0%B8%D0%BC%D0%BE%D0%B5%20%D1%80%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%95%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B0%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Единственность предела последовательностей функций
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%95%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BC%D0%B5%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%95%D1%81%D0%BB%D0%B8%20%D0%B2%D0%B7%D1%8F%D1%82%D1%8C%202%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B8%20%D0%BF%D0%BE%20%D1%82%D0%BE%D0%B9%2C%20%D0%BF%D0%BE%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B8%D1%80%D1%83%D0%B5%D0%BC%2C%20%D0%BC%D0%B5%D1%80%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%2C%20%D1%82%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%B5%D0%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%80%D1%8B%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%20%D0%BF%D1%80%D0%B8%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%BC%20%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B0%D1%80%D0%B8%D1%84%D0%BC%D0%B5%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B9%20%D1%81%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D1%8B%D0%BC%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%B2%20%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%BE%D0%BC%20%D1%81%D0%BC%D1%8B%D1%81%D0%BB%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%B7%D0%B8%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D1%81%D0%BB%D0%B5%D0%B4%D1%83%D0%B5%D1%82%20%D0%B8%D0%B7%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D1%8B%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D0%B2%20%D1%81%D1%83%D0%B1%D0%BC%D0%B5%D1%80%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D1%8B%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BC%D0%B5%D1%80%D1%8B%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%BF%D1%83%D1%82%D0%B8%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%20%D1%82%D0%BE%D1%87%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D1%8F%D1%89%D0%B8%D0%B9%20%D0%BE%D1%82%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%BD%D0%B5%D0%BE%D1%82%D1%80%D0%B8%D1%86%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%BF%D0%BE%20%D0%BA%D1%80%D0%B8%D0%B2%D0%BE%D0%B9%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Интеграл по кривой через индекс
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BA%D0%BE%D1%88%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%98%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%9A%D0%BE%D1%88%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Интегральная формула Коши
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%BE%D0%B2%D1%8B%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Терминология
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%BE%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0%20%D0%BE%20%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%94%D0%B8%D1%84%D1%84%D0%B5%D0%BC%D0%BE%D1%80%D1%84%D0%B8%D0%B7%D0%BC%D0%B0%20%D0%BD%D0%B0%20%D0%B4%D0%B2%D0%B0%2C%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%8E%D1%89%D0%B8%D1%85%20%D1%87%D0%B0%D1%81%D1%82%D0%B8%20%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%80%D0%B0%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%20%D0%B8%D0%BD%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D0%B0%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%B4%D0%B2%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%80%D0%B0%20%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0%20%D0%BD%D0%BE%D0%BB%D1%8C%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лемма
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%80%D0%B0%20%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0%20%D0%BD%D0%BE%D0%BB%D1%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лемма
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%80%D0%B0%20%D0%BB%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%80%D1%8B%20%D0%BD%D0%B0%20%D0%BB%D0%B5%D0%B1%D0%B5%D0%B3%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B9%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B5%20%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%B2%20%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D1%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%20%D0%BD%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D1%85%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%20%D0%9B%D0%B0%D0%B3%D1%80%D0%B0%D0%BD%D0%B6%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Метод неопределённых множителей Лагранжа
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D0%B2%D1%8B%D0%BA%D0%B8%D0%BD%D1%83%D1%82%D1%8C%20%D0%B3%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%20%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%BE%D0%BD%D0%BE%D1%82%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9C%D0%BE%D0%BD%D0%BE%D1%82%D0%BE%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9D%D0%B0%D0%B8%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5%D0%B5%20%28%D0%BD%D0%B0%D0%B8%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%B5%29%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D0%B9%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B%20%D0%BD%D0%B0%20%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%87%D0%BD%D0%BE%D0%B9%20%D1%81%D1%84%D0%B5%D1%80%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Фомулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9D%D0%B0%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Напоминание сходимости для последовательностей функций
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9D%D0%B5%D1%80%D0%B0%D0%B2%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE%20%D0%9A%D0%BE%D1%88%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Неравенство
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BC%20%D0%B8%20%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BC%20%D0%BD%D0%B0%20%D0%B4%D0%B5%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B2%D0%BE%D0%BC%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D0%B5%D1%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BC%20%D0%BD%D0%B0%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B5%20%D1%8F%D1%87%D0%B5%D0%B5%D0%BA%20%D1%8D%D1%82%D0%BE%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BF%D0%B8%D0%BF%D0%B5%D0%B4%D1%8B%20%D0%B2%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%D0%BC%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D0%BE%D0%BB%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%20%D0%B2%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D1%8B%20%D0%B2%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B0%D1%85%20%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D1%8F%D1%89%D0%B8%D1%85%20%D0%BE%D1%82%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B5%D0%BE%D1%82%D1%80%D0%B8%D1%86%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D1%8B%D1%85%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%8B%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B%20%D0%BD%D0%B5%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%85%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%BC%D0%B5%D1%80%D1%8B%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Примеры неизмеримох множеств относительно меры Лебега
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%20%D0%9A%D0%B0%D0%B2%D0%B0%D0%BB%D1%8C%D0%B5%D1%80%D0%B8%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%20%D0%9A%D0%B0%D0%B2%D0%B0%D0%BB%D1%8C%D0%B5%D1%80%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE%20%D0%B1%D0%BE%D1%80%D0%B5%D0%BB%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D1%85%20%D0%BE%D0%B1%D0%BE%D0%BB%D0%BE%D1%87%D0%B5%D0%BA%20%D1%81%D0%B5%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B2%20%D1%8F%D1%87%D0%B5%D0%B5%D0%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%80%D1%8B%20%D0%BD%D0%B0%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B5%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D1%81%D0%BD%D0%B8%D0%B7%D1%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%80%D1%8B%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D0%B5%20%D0%BC%D0%B5%D1%80%D1%8B%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D1%81%D1%87%D0%B5%D1%82%D0%BD%D1%83%D1%8E%20%D0%BF%D0%BE%D0%BB%D1%83%D0%B0%D0%B4%D0%B4%D0%B8%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D1%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B7%D0%B0%D0%BC%D0%BA%D0%BD%D1%83%D1%82%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%BE%D0%B9%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Утверждение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B2%D0%BD%D0%BE%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%B3%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B0%D0%B7%D0%B1%D0%B8%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Разбиение множеств
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BC%D0%B5%D1%80%D1%8B%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BC%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%B4%D0%B8%D0%B7%D1%8A%D1%8E%D0%BD%D0%BA%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%20%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Лемма
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%BC%D1%83%D0%B6%D0%B4%D0%B5%20%D0%91%D1%8D%D1%82%D0%B0%20%D0%B8%20%D0%93%D0%B0%D0%BC%D0%BC%D0%B0%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B2%D1%8F%D0%B7%D1%8C%20%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%20%D0%BD%D0%B0%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%85%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%82%D1%81%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Связь структур на системах множетсв
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B5%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%BE%20%D1%8F%D1%87%D0%B5%D0%B5%D0%BA%20%D0%B2%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%D0%BC%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B8%D0%BC%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%BF%D1%80%D0%B8%20%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D0%BE%20%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D1%85%20%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%D1%85./" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0%20%D0%BC%D0%B5%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Стандартное продолжение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%83%D0%B1%D0%BC%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%D0%B8%D0%BC%D0%B5%D0%BD%D1%8C%D1%88%D0%B5%D0%B9%20%D0%BF%D0%BE%20%D0%B2%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8E%20%D1%81%D0%B8%D0%B3%D0%BC%D0%B0%20%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B5%20%D1%81%D0%BE%D0%B1%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TODO ГИТ БЛИН БЕСИТ КАКОГО ФИГА В ОБСИДИАНЕ ВСЕ ПАПКИ ПЕРЕНОСЯТСЯ ТАК ПРОСТО И cntrl z не работает. ОН ПРОСТО ПОСНОСИЛ МНЕ ВСЁ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0%20%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B9%20%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%B9%20%D0%BC%D0%B5%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%80%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Сходимость по мере
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A1%D1%85%D0%BE%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%D1%87%D1%82%D0%B8%20%D0%B2%D0%B5%D0%B7%D0%B4%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%204%20%D0%A8%D0%B0%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%95%D0%B3%D0%BE%D1%80%D0%BE%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9A%D0%B0%D1%80%D0%B0%D1%82%D0%B5%D0%BE%D0%B4%D0%BE%D1%80%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9A%D0%BE%D1%88%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9B%D0%B5%D0%B2%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9B%D0%B8%D0%BD%D0%B4%D0%B5%D0%BB%D0%B5%D1%84%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9B%D1%83%D0%B7%D0%B8%D0%BD%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9B%D1%83%D0%B8%D0%B2%D0%B8%D0%BB%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9C%D0%BE%D1%80%D0%B5%D1%80%D1%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A0%D0%B8%D1%81%D1%81%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A2%D0%BE%D0%BD%D0%B5%D0%BB%D0%BB%D0%B8%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A2%D0%BE%D0%BD%D0%B5%D0%BB%D0%BB%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A4%D1%80%D0%B5%D1%88%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A4%D1%83%D0%B1%D0%B8%D0%BD%D0%B8%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%A4%D1%83%D0%B1%D0%B8%D0%BD%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D1%8F%D1%87%D0%B5%D0%B9%D0%BA%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%BC%D0%B5%D1%80%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%BC%D0%B5%D1%80%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D0%B5%20%D0%B4%D0%B5%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B2%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D0%B5%D1%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0%D1%85%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема о свойствах элементов полукольца
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D1%8F%D1%87%D0%B5%D0%B9%D0%BA%D0%B8%20%D1%81%20%D0%BE%D1%81%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BF%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BF%D0%B8%D0%BF%D0%B5%D0%B4%D0%B0%D0%BC%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D1%82%D0%BE%D0%BC%20%D1%87%D1%82%D0%BE%20%D1%81%D0%B5%D0%BC%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B0%20%D1%8F%D1%87%D0%B5%D0%B5%D0%BA%20%D0%BF%D0%BE%D0%BB%D1%83%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D1%84%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9%20%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B0%20%D0%BB%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0%20%D1%81%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%BE%D0%BC%20%D0%BF%D0%BE%20%D1%80%D0%B8%D0%BC%D0%B0%D0%BD%D1%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%9A%D0%BE%D1%88%D0%B8-%D0%A0%D0%B8%D0%BC%D0%B0%D0%BD%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%B4%D0%B8%D1%84%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F%20%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B0%20%D0%B2%20%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Условия
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9%20%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B5%D0%BC%D1%83%D0%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%9B%D0%B5%D0%B9%D0%B1%D0%BD%D0%B8%D1%86%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9%20%D0%B2%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%D0%B5%20%D0%BF%D0%BE%20%D0%BC%D0%B5%D1%80%D0%B5%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%20%D0%9B%D0%B0%D0%B3%D0%B0%D0%BD%D0%B6%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%A6%D0%B5%D0%BB%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D1%81%D1%83%D0%BF%D1%80%D0%B5%D0%BC%D1%83%D0%BC%D0%B0%2C%20%D0%B8%D0%BD%D1%84%D0%B8%D0%BD%D1%83%D0%BC%D0%B0%2C%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%BE%D0%B2%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B2%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D0%BD%D0%B5%20%D1%81%D0%BE%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D0%BB%20%D0%9B%D0%B5%D0%B1%D0%B5%D0%B3%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D1%81%D1%83%D0%BC%D0%BC%D0%B8%D1%80%201/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Суммир 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D1%81%D1%83%D0%BC%D0%BC%D0%B8%D1%80/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Суммир
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../222-Calculus/%D1%8D%D0%BA%D0%B2%D0%B8%D0%B2%D0%B0%D0%BB%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B8%D0%B7%D0%BC%D0%B5%D1%80%D0%B8%D0%BC%D1%8B%D1%85%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формулировка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_4" id="__nav_1_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    223 Codes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            223 Codes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../223-Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    223 Codes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%B8%D0%B7%D0%BC%20%D0%A4%D1%80%D0%BE%D0%B1%D0%B5%D0%BD%D0%B8%D1%83%D1%81%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%90%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D0%B0%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%92%D0%B5%D1%81%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%B4%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D0%92%D0%B0%D1%80%D1%88%D0%B0%D0%BC%D0%BE%D0%B2%D0%B0-%D0%93%D0%B8%D0%BB%D1%8C%D0%B1%D0%B5%D1%80%D1%82%D0%B0%20%28%D0%B6%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BB%D0%B8%D0%BD%D0%B5%D0%B9%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%B4%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%93%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0%20%D0%93%D0%B8%D0%BB%D1%8C%D0%B1%D0%B5%D1%80%D1%82%D0%B0%20%28%D0%B6%D0%B0%D0%B4%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BE%D0%B4%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%95%D0%B4%D0%B8%D0%BD%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%D1%8B%20%D0%A0%D0%B8%D0%B4%D0%B0%20%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Коды Рида Соломона
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%B4%D1%8B%20%D0%A0%D0%B8%D0%B4%D0%B0-%D0%9C%D0%B0%D0%BB%D0%BB%D0%B5%D1%80%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9A%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Конечное расширение полей
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9C%D0%B8%D0%BD%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Минимальный многочлен
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Полиномиальные коды
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Полиномиальные коды
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цикличность
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BE%D1%87%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Определение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%8F%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%BC%20%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE%D1%87%D0%BB%D0%B5%D0%BD%D0%B0./" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Расширение поля корнем многочлена.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%86%20%D0%A5%D1%8D%D0%BC%D0%BC%D0%B8%D0%BD%D0%B3%D0%B0%20%D0%B8%20%D0%93%D0%B8%D0%BB%D1%8C%D0%B1%D0%B5%D1%80%D1%82%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Сравнение границ Хэмминга и Гильберта
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A1%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%8F%20%D0%B4%D0%BB%D1%8F%20%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B3%D0%BE%20%D1%87%D0%B8%D1%81%D0%BB%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%BE%20%D0%B1%D0%B0%D1%88%D0%BD%D0%B5%20%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_5" id="__nav_1_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    224 Probability
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            224 Probability
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/224-Probability/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    224 Probability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%91%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Биномиальное распределение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%92%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%BE%20%D0%B2%D0%B7%D0%B2%D0%B5%D1%88%D0%B5%D0%BD%D0%BD%D1%8B%D0%BC%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F%D0%BC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Вероятность по взвешенным событиям
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%92%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Вероятность события
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D0%B5%20%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Независимое событие
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%9F%D0%BE%D0%BB%D0%B8%D0%BD%D0%BE%D0%BC%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Полиномиальная схема
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%9F%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%BD%D1%8B%D1%85%20%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BE%D0%B2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Пространство элементарных исходов
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D1%81%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D0%B0%20%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Случайная раскраска множества
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A1%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D0%B5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Событие
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%20%D0%91%D0%B5%D1%80%D0%BD%D1%83%D0%BB%D0%BB%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Схема Бернулли
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%91%D0%B0%D0%B9%D0%B5%D1%81%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема Байеса
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9F%D1%80%D0%BE%D1%85%D0%BE%D1%80%D0%BE%D0%B2%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема Прохорова
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%9F%D1%83%D0%B0%D1%81%D1%81%D0%BE%D0%BD%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема Пуассона
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A2%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0%20%D0%AD%D1%80%D0%B4%D1%91%D1%88%D0%B0-%D0%A5%D0%B0%D0%B9%D0%BD%D0%B0%D0%BB%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Теорема Эрдёша Хайнала
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D1%8C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Условная вероятность
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%91%D0%B0%D0%B9%D0%B5%D1%81%D0%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формула Байеса
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../224-Probability/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0%20%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D0%B2%D0%B5%D1%80%D0%BE%D1%8F%D1%82%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Формула полной вероятности
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    230 Hum
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            230 Hum
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../230-Hum/230-Hum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    230 Hum
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4_2" id="__nav_1_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    231 Economics
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            231 Economics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../230-Hum/231-Economics/231-Economics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    231 Economics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archive
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Цикличность
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Полиномиальные коды</h1>
+
+<p><span class="arithmatex">\(k &lt; n\)</span>, <span class="arithmatex">\(\mathbb{F}_q[x]_{&lt;k} \to F_q[x]_{&lt;n}\)</span>
+Возьмем многочлен <span class="arithmatex">\(g(x), \deg g(x) = n - k\)</span>, получим отображение <span class="arithmatex">\(f \to f \cdot g\)</span>. Это отображение задает какой-то код.</p>
+<blockquote>
+<p>[!NOTE]
+Образ отображения - все многочлены, делящиеся на <span class="arithmatex">\(g\)</span></p>
+</blockquote>
+<p><span class="arithmatex">\(f(x) \cdot x^{n-k} + r(x) \equiv o(\mod g(x))\)</span> - более простой вариант кодирования (биекция с умножениеПолиномиальные кодым)</p>
+<p><span class="arithmatex">\(- f(x) x^{n-k} \mod g(x) +f(x) x^{n-k}\)</span> - Cyclic Redundancy Check</p>
+<h2 id="_1">Цикличность<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><span class="arithmatex">\(1 \to g(x) = b_0 + b_1x + ... b_{n-k}x^{n-k}\)</span>
+<span class="arithmatex">\(x-&gt;g(x) = b_0x + ... + b_{n-k}x^{n-k+1}\)</span> 
+Каждый из циклических сдвигов кодового слова тоже кодовое слово</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
