@@ -4,7 +4,7 @@ import glob
 import argparse
 
 def extract_newcommands(preamble_file):
-    """Extract newcommand definitions from preamble.sty, one per line. """
+    """Extract newcommand definitions from preamble.sty, one per line."""
     commands = {}
     
     with open(preamble_file, 'r', encoding='utf-8') as f:
