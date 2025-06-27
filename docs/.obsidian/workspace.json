@@ -4,21 +4,315 @@
     "type": "split",
     "children": [
       {
-        "id": "13951a3e9ce5ed5d",
+        "id": "44c1425fac430cf7",
         "type": "tabs",
         "children": [
           {
-            "id": "c54b581ab45aa15e",
+            "id": "7df9ef62e9937b17",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "200-Study/220-Math/222-Calculus/Голоморфная функция.md",
+                "file": "200-Study/200-Study.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Голоморфная функция"
+              "title": "200-Study"
+            }
+          },
+          {
+            "id": "f1f21ead43e818f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/222-Calculus/Коэффициенты фурье.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Коэффициенты фурье"
+            }
+          },
+          {
+            "id": "21165d7d18a067d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Теорема о коэффициентах ряда ортогональной системы.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема о коэффициентах ряда ортогональной системы"
+            }
+          },
+          {
+            "id": "2011960e55af17c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ортонормированная система.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ортонормированная система"
+            }
+          },
+          {
+            "id": "1bd879902b1bb9aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ортогональная система.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ортогональная система"
+            }
+          },
+          {
+            "id": "ee32dfd76d3854a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Теорема о сходимости ортогонального ряда в гильбертовом пространстве.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема о сходимости ортогонального ряда в гильбертовом пространстве"
+            }
+          },
+          {
+            "id": "d43a92189152067e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ортогональный ряд.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ортогональный ряд"
+            }
+          },
+          {
+            "id": "a5d6fac23c24bd33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ортогональные вектора.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ортогональные вектора"
+            }
+          },
+          {
+            "id": "4d1e9892c40035db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Гильбертово пространство.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Гильбертово пространство"
+            }
+          },
+          {
+            "id": "ffe5af47a31772dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/222-Calculus/Теорема о полноте пространств Лебега.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема о полноте пространств Лебега"
+            }
+          },
+          {
+            "id": "2ff60d9080658301",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Теорема Пойя о блуждании.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема Пойя о блуждании"
+            }
+          },
+          {
+            "id": "21f10dca2131bf5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Торема о нулевости произвольного симметричного случайного блуждания.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Торема о нулевости произвольного симметричного случайного блуждания"
+            }
+          },
+          {
+            "id": "8936a1a666f62cc4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Теорема о возвратности произвольного симметричного случайного блуждания.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема о возвратности произвольного симметричного случайного блуждания"
+            }
+          },
+          {
+            "id": "50e36c98af1b4319",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Произвольное симметричное случайное блуждание.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Произвольное симметричное случайное блуждание"
+            }
+          },
+          {
+            "id": "be3b24bf387f9acb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Теорема о возвратности случайного блуждании.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема о возвратности случайного блуждании"
+            }
+          },
+          {
+            "id": "c062e5f153678afe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/222-Calculus/Теорема.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема"
+            }
+          },
+          {
+            "id": "8aa11ee5250871c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Случайное блуждания в целые соседние точки.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Случайное блуждания в целые соседние точки"
+            }
+          },
+          {
+            "id": "a663bc02ca6442a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Теорема солидарности.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Теорема солидарности"
+            }
+          },
+          {
+            "id": "c536c05a9e6c31f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Критерий возвратности.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Критерий возвратности"
+            }
+          },
+          {
+            "id": "708956eb682db933",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Нулевое состояние.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Нулевое состояние"
+            }
+          },
+          {
+            "id": "9cff6d2931e33722",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Возвратное состояние.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Возвратное состояние"
+            }
+          },
+          {
+            "id": "0989d92b47512f54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "200-Study/220-Math/224-Probability/2.4/Виды состояний цепи маркова.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Виды состояний цепи маркова"
             }
           }
         ]
@@ -141,13 +435,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vault/vault.md",
+                "file": "Критические графы.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of vault"
+              "title": "Outline of Критические графы"
             }
           },
           {
@@ -178,53 +472,52 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c54b581ab45aa15e",
+  "active": "7df9ef62e9937b17",
   "lastOpenFiles": [
+    "200-Study/220-Math/224-Probability/Screenshot 2025-06-17 at 20.44.05.png",
+    "200-Study/220-Math/222-Calculus/Гильбертово пространство.md",
     "200-Study/220-Math/222-Calculus/222-Calculus.md",
-    "200-Study/220-Math/223-Codes/223-Codes.md",
-    "200-Study/220-Math/222-Calculus/Алгебры.md",
-    "200-Study/220-Math/222-Calculus/Равносильные условия голоморфности.md",
+    "200-Study/220-Math/222-Calculus/Теорема о коэффициентах ряда ортогональной системы.md",
+    "200-Study/220-Math/222-Calculus/Ортонормированная система.md",
+    "200-Study/220-Math/222-Calculus/Коэффициенты фурье.md",
+    "200-Study/220-Math/222-Calculus/Теорема о сходимости ортогонального ряда в гильбертовом пространстве.md",
+    "200-Study/220-Math/222-Calculus/Ортогональная система.md",
+    "200-Study/220-Math/222-Calculus/Ортогональный ряд.md",
+    "200-Study/220-Math/222-Calculus/Ортогональные вектора.md",
+    "200-Study/220-Math/222-Calculus/Fourier/2/Теорема о непрерывности сдвига.md",
+    "200-Study/220-Math/222-Calculus/Теорема о полноте пространств Лебега.md",
+    "200-Study/220-Math/222-Calculus/Fourier/2/Сдвиг функции.md",
+    "200-Study/220-Math/222-Calculus/Fourier/2/Финитная функция.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Теорема о плотности ступенчатых функций.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Лемма о нулях ступенчатой функции в множестве лебега.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Сепарабельное метрическое пространство.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Ступенчатая функция.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Плотность в метрическом пространстве.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Теорема вложения пространств Лебега.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Неравенство Гельдера в пространстве лебега.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Существенный супремум.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Пространство лебега.md",
+    "200-Study/220-Math/222-Calculus/Fourier/1/Пространство лебега в натуральных числах.md",
     "200-Study/220-Math/220-Math.md",
-    "200-Study/210-Computer-Science/210-Computer-Science.md",
-    "200-Study/200-Study.md",
-    "vault.md",
-    "vault/200-Study/230-Hum/231-Economics/231-Economics.md",
-    "vault/200-Study/220-Math/224-Probability/Формула полной вероятности.md",
-    "vault/200-Study/220-Math/224-Probability/Формула Байеса.md",
-    "vault/200-Study/220-Math/224-Probability/Условная вероятность.md",
-    "vault/200-Study/220-Math/224-Probability/Теорема Эрдёша-Хайнала.md",
-    "vault/200-Study/220-Math/224-Probability/Теорема Пуассона.md",
-    "vault/200-Study/220-Math/224-Probability/Теорема Прохорова.md",
-    "vault/200-Study/220-Math/224-Probability/Теорема Байеса.md",
-    "vault/200-Study/220-Math/224-Probability/Схема Бернулли.md",
-    "vault/200-Study/220-Math/224-Probability/Событие.md",
-    "vault/200-Study/220-Math/224-Probability/Случайная раскраска множества.md",
-    "vault/200-Study/220-Math/224-Probability/Пространство элементарных исходов.md",
-    "vault/200-Study/220-Math/224-Probability/Полиномиальная схема.md",
-    "vault/200-Study/220-Math/224-Probability/Независимое событие.md",
-    "vault/200-Study/220-Math/224-Probability/Вероятность события.md",
-    "vault/200-Study/220-Math/224-Probability/Вероятность по взвешенным событиям.md",
-    "vault/200-Study/220-Math/224-Probability/Биномиальное распределение.md",
-    "vault/200-Study/220-Math/224-Probability/224-Probability.md",
+    "200-Study/220-Math/224-Probability/2.4/Теорема о возвратности произвольного симметричного случайного блуждания.md",
+    "200-Study/220-Math/224-Probability/2.4/Screenshot 2025-06-15 at 20.02.38.png",
+    "200-Study/220-Math/224-Probability/2.4",
+    "200-Study/220-Math/222-Calculus/Fourier/2",
+    "200-Study/220-Math/222-Calculus/Fourier/1",
+    "200-Study/220-Math/222-Calculus/Fourier",
+    "200-Study/220-Math/222-Calculus/Screenshot 2025-04-01 at 18.27.53.png",
+    "200-Study/220-Math/225-Discrete",
+    "200-Study/220-Math/224-Probability/Pasted image 20250328082837.png",
+    "200-Study/220-Math/224-Probability/Pasted image 20250328205702.png",
+    "200-Study/220-Math/224-Probability/Pasted image 20250326212838.png",
     "vault/200-Study/220-Math/223-Codes/Pasted image 20241118181905.png",
     "vault/200-Study/220-Math/222-Calculus/classic_volume.svg",
     "vault/200-Study/220-Math/222-Calculus/semi-ring-example.png",
     "vault/200-Study/220-Math/222-Calculus/VolumeInCartesianProductPxQgrid_ugly_case.svg",
-    "vault/200-Study/220-Math/222-Calculus/VolumeInCartesianProductPxQgrid_simple_case.svg",
-    "vault/200-Study/220-Math/222-Calculus/PxQsetminusP'xQ'.svg",
-    "vault/200-Study/220-Math/222-Calculus/PxQcapP'xQ'.svg",
-    "vault/200-Study/220-Math/222-Calculus/Pasted image 20250202155359.png",
-    "vault/200-Study/220-Math/222-Calculus/Pasted image 20250202155247.png",
-    "vault/200-Study/220-Math/222-Calculus/Pasted image 20241029223427.png",
     "vault/200-Study/230-Hum/231-Economics",
     "vault/200-Study/220-Math/224-Probability",
     "vault/200-Study/220-Math/223-Codes",
     "vault/200-Study/220-Math/222-Calculus",
-    "vault/200-Study/220-Math/221-Algebra",
-    "vault/200-Study/210-Computer-Science/211-Algorithms",
-    "vault/200-Study/230-Hum",
-    "vault/200-Study/220-Math",
-    "vault/200-Study/210-Computer-Science",
-    "vault/200-Study"
+    "vault/200-Study/220-Math/221-Algebra"
   ]
 }
